@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--<meta name="keyword" content="HTML,Python,Javascript,">-->
+    <meta name="description" content="Ebuzer Yalcin | Software School" />  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Links to css folders-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--FavIcon, The snippet below is copied from https://favicon.io/favicon-generator/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <!--Tablet version-->
+    <link rel="stylesheet" media="(max-width:768px)" href="assets/css/tablet.css"/>
+    <!--Mobile version-->
+    <link rel="stylesheet" media="(max-width:500px)" href="assets/css/mobile.css"/>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&display=swap" rel="stylesheet"/>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <title>Software School</title>
+</head>
+
+<body>
+<!--Back to top button, External Source, W3S-->
+    <button onclick="topFunction()" id="back-to-top-button" title="Go to top">Back To Top</button>
+
+<!--Navbar, header using container class-->
+    <header class="bg-dark-blue">
+        <div class="container">
+            <nav id="navbar-styling">
+                <!-- Created one h1, and ul with four anchors to make clickable buttons which takes you to sections on the page -->
+                <h1 class="heading-small">Ebuzer YALCIN </h1>
+                <ul class="navbar-btn-right">
+                    <li class="button-style-nav"><a href="#home-button">Home</a></li>
+                    <li class="button-style-nav"><a href="#education-button">Education</a></li>
+                    <li class="button-style-nav"><a href="#courses-button">Courses</a></li>
+                    <li class="button-style-nav"><a href="#contact-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Added the home section with an image and information about the tutor, added a button which will take us to the courses section-->
+    <section id="home-button">
+        <img src="assets/images/profile.png" alt="Butterfly" />
+        <div class="name text-center">
+
+            <h2 class="heading-big">Ebuzer Yalcin</h2>
+            <p>Senior Full Stack Developer</p>
+        </div>
+        <a href="#courses-button" class="btn btn-primary"> Go to Courses</a>
+    </section>
+
+<!--Education section, differerent education plans-->
+<section id="education-button" class="bg-dark-blue">
+        <h3 class="text-center heading-medium">Education Plan</h3>
+        <ul class="items">
+            <li class="item">
+                <i class="fas fa-home"></i>
+                <h3>Classroom</h3>
+                <p>Become a Full Stack Developer - Study for 3 months
+                </p>
+            </li>
+            <li class="item">
+                <i class="fas fa-globe"></i>
+                <h3>Online</h3>
+                <p>Choose your course or courses and start coding from home
+                </p>
+            </li>
+            <li class="item">
+                <i class="fas fa-microphone"></i>
+                <h3>Conference</h3>
+                <p>Feel free to contact me for more details!
+                </p>
+            </li>
+        </ul>
+    </section>
+
+<!--------------------------- Button trigger modal, bootstrap modal component ----------------------->
+<!-- First modal, Modal1, with content of the first course, included an embedded specific video -->
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Introduction Video <i class="fas fa-video"></i></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>
+        -This course gives you 30 ects points and is approved globally <br>
+        -Instant certificate after completing course
+        </h5>
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/embed/m5GVfWl9jbw" allowfullscreen></iframe>
+        </div>
+        <br>
+        <h5>Contact us for further details!</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second modal, Modal2, with content of the second course, included an embedded specific video -->
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example-Modal-LongTitle">Introduction Video <i class="fas fa-video"></i></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>
+        -This course gives you 22.5 ects points and is approved globally <br>
+        -Instant certificate after completing course
+        </h5>
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/embed/Y8Tko2YC5hA" allowfullscreen></iframe>
+        </div>
+        <br>
+        <h5>Contact us for further details!</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third modal, Modal3, with content of the third course, included an embedded specific video -->
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example-Modal-Long-Title">Introduction Video <i class="fas fa-video"></i></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>
+        -This course gives you 15 ects points and is approved globally <br>
+        -Instant certificate after completing course
+        </h5>
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/embed/SIyxjRJ8VNY" allowfullscreen></iframe>
+        </div>
+        <br>
+        <h5>Contact us for further details!</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--Courses section, using bootstraps grid system to create 3 courses with description and introduction-->
+<section id="courses-button">
+   <h3 class="text-center heading-medium" > Courses</h3>
+   <div class="row">
+      <div class="col-sm text-center">
+         <img src="assets/images/html.jpg" alt="Html"  class="img-thumbnail courses-images"/>
+      </div>
+      <div class="col-sm course-info">
+         <div class="title-course">
+            HTML, CSS, Javascript and Bootstrap 
+         </div>
+         <div class="description-course">
+            Begin your journey with Front-End Development to become a Master
+         </div>
+         <div class="instruction-course">Ebuzer Yalcin</div>
+         <div class="rating">4.8 <i class="far fa-star"></i> | (35.000 Votes)</div>
+         <span class="discount-span">%50 Discount</span> <br>
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal1"><i class="fas fa-film"></i> Description 
+         </button>
+      </div>
+   </div>
+
+<div class="row">
+   <div class="col-sm text-center">
+      <img src="assets/images/python.jpg" alt="Python"  class="img-thumbnail courses-images"/>
+   </div>
+   <div class="col-sm course-info">
+      <div class="title-course">
+         Python and MySQL
+      </div>
+      <div class="description-course">
+         Getting started with MySQL in Python
+      </div>
+      <div class="instruction-course">Ebuzer Yalcin</div>
+      <div class="rating">4.7 <i class="far fa-star"></i> | (25.000 Votes)</div>
+      <span class="discount-span">%60 Discount</span><br>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal2"><i class="fas fa-film"></i> Description
+      </button>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-sm text-center">
+      <img src="assets/images/django2.jpg" alt="Django"  class="img-thumbnail courses-images"/>
+   </div>
+   <div class="col-sm course-info">
+      <div class="title-course">
+         Build and deploy rich web applications using Django 
+      </div>
+      <div class="description-course">
+         Learn the fundamentals of building a full-featured web site using Django
+      </div>
+      <div class="instruction-course">Ebuzer Yalcin</div>
+      <div class="rating">4.4 <i class="far fa-star"></i> | (10.000 Votes)</div>
+      <span class="discount-span">%70 Discount</span><br>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal3"><i class="fas fa-film"></i> Description
+      </button>
+   </div>
+</div>
+</section>
+
+    <!--CONTACT form using Bootstrap with input places and a send button, opens a blank page with form input, input required to send/submit the form-->
+<section id="contact-button" class="bg-dark-blue">
+   <div class="contact-form">
+      <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank">
+         <h4 class="text-center heading-medium">Contact Us</h4>
+         <div class="form-group">
+            <label for="name">Name</label>
+            <input 
+               type="text" 
+               name="name" 
+               class="form-control" 
+               id="name" 
+               placeholder="Name" required/>
+         </div>
+         <!--Email form part-->
+         <div class="form-group">
+            <label for="email">Email</label>
+            <input
+               type="text" 
+               name="email" 
+               class="form-control" 
+               id="email" 
+               placeholder="E-mail" required/>
+         </div>
+         <!-- Message form part-->
+         <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control" placeholder="Message..." required></textarea>
+             <!--put style in main.css-->
+         </div>
+         <button type="submit" class="btn btn-block-submit">Send</button>
+      </form>
+   </div>
+</section>
+
+<!--FOOTER, containing, presentation of tutor, phone, mail, social links and quick links, takes us to sections of the page-->
+<div class="footer">
+   <div class="footer-content">
+      <div class="footer-section about">
+         <h1 class="logo-text"><span>Ebuzer</span>Yalcin</h1>
+         <br>
+         <p>Ebuzer is a passionate Full Stack Developer with 5 years of professional experience in teaching programming. </p>
+         <br>
+         <div class="contact-button">
+            <span><i class="fas fa-phone"></i> <a href="tel:+0892019100"> 0892019100</a></span>
+            <br><br>
+            <span><i class="fas fa-envelope"></i> <a href="mailto:soft@dev.edu">soft@dev.edu</a></span>
+            <br><br>
+         </div>
+         <div class="socials">
+            <a aria-label="This is a link to an external page called Facebook" target="_blank" href="http://www.facebook.com/">
+            <i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a aria-label="This is a link to an external page called Instagram" target="_blank" href="http://www.instagram.com/">
+            <i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a aria-label="This is a link to an external page called Twitter" target="_blank" href="http://www.twitter.com/">
+            <i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a aria-label="This is a link to an external page called Youtube" target="_blank" href="http://www.youtube.com/">
+            <i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a aria-label="This is a link to an external page called Linkedin" target="_blank" href="http://www.linkedin.com/">
+            <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+         </div>
+      </div>
+      <div class="footer-section links">
+         <h2>Quick Links</h2>
+         <br>
+         <ul>
+            <li>
+                <a href="#home-button">Home</a>
+            </li>
+            <li>
+                <a href="#education-button">Education</a>
+            </li>   
+            <li>
+            <a href="#courses-button">Courses</a>
+            </li>   
+            <li>
+            <a href="#contact-button">Contact</a>
+            </li>   
+         </ul>
+      </div>
+   </div>
+   <div class="footer-bottom">
+      &copy; Designed by Ebuzer Yalcin | <a href="mailto:soft@dev.edu">soft@dev.edu</a>
+   </div>
+</div>
+
+
+<!--Back to top Button script, External Source, W3S-->
+<script>
+//Get the button
+var mybutton = document.getElementById("back-to-top-button");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+   <!--This is Javascript to use Modal in Courses section-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
